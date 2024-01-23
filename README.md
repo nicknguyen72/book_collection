@@ -1,3 +1,5 @@
+# book_collection
+Repo that contains my book collection app
 # README
 
 This README would normally document whatever steps are necessary to get the
