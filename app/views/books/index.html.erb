@@ -1,0 +1,11 @@
+<h1>Books#index</h1>
+<p>Find me in app/views/books/index.html.erb</p>
+
+<%= link_to('New', '/books/new') %><br />
+<%= link_to('Edit', {controller: 'books', action: 'edit', name:"Funny Book", page:4}) %><br />
+
+<% letters = ['A', 'B', 'C', 'D', 'E'] %>
+
+<% letters.each do |letter| %>
+    <li><%= letter %></li>
+<% end %>
