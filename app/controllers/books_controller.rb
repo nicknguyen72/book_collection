@@ -32,6 +32,7 @@ class BooksController < ApplicationController
         format.html { redirect_to books_path, notice: "Book was successfully created." }
         format.json { render :show, status: :created, location: @book }
       else
+        flash[:alert] = "Title can't be blank"
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
@@ -45,6 +46,7 @@ class BooksController < ApplicationController
         format.html { redirect_to books_path, notice: "Book was successfully updated." }
         format.json { render :show, status: :ok, location: @book }
       else
+        flash[:alert] = "Title can't be blank"
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @book.errors, status: :unprocessable_entity }
       end
@@ -69,6 +71,6 @@ class BooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def book_params
-      params.require(:book).permit(:title)
+      params.require(:book).permit(:title, :author, :price, :published_date)
     end
 end
