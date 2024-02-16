@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <p style="color: green"><%= notice %></p>
 
 <h1>Books</h1>
@@ -14,3 +15,21 @@
 </div>
 
 <%= link_to "New book", new_book_path %>
+=======
+<p style="color: green"><%= notice %></p>
+
+<h1>Books</h1>
+
+<div id="books">
+  <% @books.each do |book| %>
+    <%= book.title %>
+    <p>
+      <%= link_to "Show this book", book %> |
+      <%= link_to "Edit this book", edit_book_path(book) %> |
+      <%= link_to "Destroy this book", delete_book_path(book) %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New book", new_book_path %>
+>>>>>>> 1bf41ff7308f7adfeacd0d7a8b1e79255ac7d02d

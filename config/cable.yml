@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 development:
   adapter: async
 
@@ -8,3 +9,15 @@ production:
   adapter: redis
   url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
   channel_prefix: book_collection_production
+=======
+development:
+  adapter: async
+
+test:
+  adapter: test
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  channel_prefix: book_collection_production
+>>>>>>> 1bf41ff7308f7adfeacd0d7a8b1e79255ac7d02d

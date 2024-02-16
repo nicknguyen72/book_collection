@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://git-scm.com/docs/gitattributes for more about git attribute files.
 
 # Mark the database schema as having been generated.
@@ -5,3 +6,12 @@ db/schema.rb linguist-generated
 
 # Mark any vendored files as having been vendored.
 vendor/* linguist-vendored
+=======
+# See https://git-scm.com/docs/gitattributes for more about git attribute files.
+
+# Mark the database schema as having been generated.
+db/schema.rb linguist-generated
+
+# Mark any vendored files as having been vendored.
+vendor/* linguist-vendored
+>>>>>>> 1bf41ff7308f7adfeacd0d7a8b1e79255ac7d02d
